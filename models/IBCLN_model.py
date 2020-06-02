@@ -10,7 +10,7 @@ import code
 import torchvision.transforms as transforms
 
 
-class GenLstmgangammaModel(BaseModel, torch.nn.Module):
+class IBCLNModel(BaseModel, torch.nn.Module):
     """
     This class implements the CycleGAN model, for learning image-to-image translation without paired data.
 
