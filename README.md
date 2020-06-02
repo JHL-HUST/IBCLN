@@ -43,7 +43,7 @@ Our main contributions are as follows:
 
 ### Prepare Datasets
 
-Please download our created [dataset](https://drive.google.com/file/d/1YWkm80jWsjX6XwLTHOsa8zK3pSRalyCg/view?usp=sharing ) and images from [Zhang et al.][3], and copy them to ```datasets/reflection```.
+Download and unzip our created [dataset](https://drive.google.com/file/d/1YWkm80jWsjX6XwLTHOsa8zK3pSRalyCg/view?usp=sharing ) and images from [Zhang et al.][3], and then copy them to ```datasets/reflection```.
 
 
 
@@ -51,11 +51,11 @@ Please download our created [dataset](https://drive.google.com/file/d/1YWkm80jWs
 
 - #### Download Pre-trained Model
 
-Please download our [pre-trained model](https://drive.google.com/file/d/1Dnlb875jP-F3vcFHlolcPTXFn4RmnQNr/view?usp=sharing) and copy it to ```checkpoints\IBCLN```.
+Download and unzip our [pre-trained model](https://drive.google.com/file/d/1Dnlb875jP-F3vcFHlolcPTXFn4RmnQNr/view?usp=sharing), and then copy them to ```checkpoints/IBCLN```.
 
 - #### Prepare data
 
-Please copy image pairs ```T``` and ```I``` you want to test to ```datasets/reflection/testA1``` and ```datasets/reflection/testB``` separately.
+Copy image pairs ```T``` and ```I``` you want to test to ```datasets/reflection/testA1``` and ```datasets/reflection/testB``` separately.
 
 - #### Run
 
@@ -63,7 +63,7 @@ You can run ```bash test.sh```
 
 or equivalently:
 
-```python test.py --dataroot datasets/reflection --name IBCLN --model IBCLN --dataset_mode resize_natural_3  --preprocess "" --no_flip  -epoch final --gpu_ids 0``
+```python test.py --dataroot datasets/reflection --name IBCLN --model IBCLN --dataset_mode resize_natural_3  --preprocess "" --no_flip  -epoch final --gpu_ids 0```	
 
 
 
