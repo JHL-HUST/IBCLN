@@ -1,0 +1,4 @@
+# This file is created to preserve this directory
+*
+# Except this file
+!.gitignore
