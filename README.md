@@ -63,7 +63,7 @@ You can run ```bash test.sh```
 
 or equivalently:
 
-```python test.py --dataroot datasets/reflection --name reflection_gen_lstmgan_gamma --model gen_lstmgan_gamma --dataset_mode resize_natural_3  --preprocess "" --no_flip  -epoch final --gpu_ids 0``
+```python test.py --dataroot datasets/reflection --name IBCLN --model IBCLN --dataset_mode resize_natural_3  --preprocess "" --no_flip  -epoch final --gpu_ids 0``
 
 
 
@@ -87,7 +87,7 @@ You can run ```bash train.sh```
 
 or equivalently:
 
-```python train.py --dataroot datasets/reflection --name reflection_gen_lstmgan_gamma --model gen_lstmgan_gamma --dataset_mode resize_natural_3   --no_flip   --gpu_id 0 --display_id -1```
+```python train.py --dataroot datasets/reflection --name IBCLN --model IBCLN --dataset_mode resize_natural_3   --no_flip   --gpu_id 0 --display_id -1```
 
 
 
@@ -96,7 +96,7 @@ or equivalently:
 
 1) ``train.py``: Execute this file to train the model 
 2) ``test.py``: Execute this file to test the model 
-3) ``model/model.py``: Contains the class defining the model
+3) ``model/IBCLN_model.py``: Contains the class defining our model
 4) ``model/networks.py``: Contains the function that defining the networks and losses.
 5) ``options/base_options.py``: This file contains the basic options
 6) ``options/train_options.py``: This file contains the options for training

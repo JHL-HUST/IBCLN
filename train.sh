@@ -1,1 +1,1 @@
-python train.py --dataroot datasets/reflection --name reflection_gen_lstmgan_gamma --model gen_lstmgan_gamma --dataset_mode resize_natural_3   --no_flip   --gpu_id 0 --display_id -1
+python train.py --dataroot datasets/reflection --name IBCLN --model IBCLN --dataset_mode resize_natural_3   --no_flip   --gpu_id 0 --display_id -1
