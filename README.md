@@ -56,6 +56,7 @@ Download and unzip our [pre-trained model](https://drive.google.com/file/d/1Dnlb
 - #### Prepare data
 
 Copy image pairs ```T``` and ```I``` you want to test to ```datasets/reflection/testA1``` and ```datasets/reflection/testB``` separately.
+If ```T``` image is not given, the ground truth will be an all black image.
 
 - #### Run
 
@@ -63,7 +64,7 @@ You can run ```bash test.sh```
 
 or equivalently:
 
-```python test.py --dataroot datasets/reflection --name IBCLN --model IBCLN --dataset_mode resize_natural_3  --preprocess "" --no_flip  -epoch final --gpu_ids 0```	
+```python test.py --dataroot datasets/reflection --name IBCLN --model IBCLN --dataset_mode resize_natural_3  --preprocess "" --no_flip --epoch final --gpu_ids 0```	
 
 
 

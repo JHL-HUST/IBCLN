@@ -132,12 +132,15 @@ class ResizeNatural3Dataset(BaseDataset):
                 A2_img = Image.open(A2_path).convert('RGB')
                 B_img = Image.fromarray(np.zeros_like(A1_img))
                 is_natural_int = 0
-        else:
-            A1_path = self.A1_paths[index]
+        else:  # test
             B_path = self.B_paths[index]
-            A1_img = Image.open(A1_path).convert('RGB')
-            A2_img = None
             B_img = Image.open(B_path).convert('RGB')
+            if index < len(self.A1_paths):
+                A1_path = self.A1_paths[index]
+                A1_img = Image.open(A1_path).convert('RGB')
+            else:
+                A1_img = Image.fromarray(np.zeros_like(B_img))
+            A2_img = None
             is_natural_int = 1
 
         w, h = A1_img.size
